@@ -1,0 +1,2251 @@
+{
+  "@graph": [
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#value",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Used to indicate the literal value of a data property that requires property parameters"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "value"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#PCS",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "This class is deprecated",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "PCS"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#TelephoneType"
+      },
+      "http://www.w3.org/2002/07/owl#deprecated": {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": "true"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Home",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "This implies that the property is related to an individual's personal life"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Home"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#Type"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Name",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "To specify the components of the name of the object"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Name"
+      },
+      "http://www.w3.org/2002/07/owl#equivalentClass": {
+        "@type": "http://www.w3.org/2002/07/owl#Class",
+        "http://www.w3.org/2002/07/owl#unionOf": {
+          "@list": [
+            {
+              "@type": "http://www.w3.org/2002/07/owl#Class",
+              "http://www.w3.org/2002/07/owl#intersectionOf": {
+                "@list": [
+                  {
+                    "@type": "http://www.w3.org/2002/07/owl#Restriction",
+                    "http://www.w3.org/2002/07/owl#onProperty": {
+                      "@id": "http://www.w3.org/2006/vcard/ns#additional-name"
+                    },
+                    "http://www.w3.org/2002/07/owl#someValuesFrom": {
+                      "@id": "http://www.w3.org/2001/XMLSchema#string"
+                    }
+                  },
+                  {
+                    "@type": "http://www.w3.org/2002/07/owl#Restriction",
+                    "http://www.w3.org/2002/07/owl#minCardinality": {
+                      "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+                      "@value": "0"
+                    },
+                    "http://www.w3.org/2002/07/owl#onProperty": {
+                      "@id": "http://www.w3.org/2006/vcard/ns#additional-name"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@type": "http://www.w3.org/2002/07/owl#Class",
+              "http://www.w3.org/2002/07/owl#intersectionOf": {
+                "@list": [
+                  {
+                    "@type": "http://www.w3.org/2002/07/owl#Restriction",
+                    "http://www.w3.org/2002/07/owl#onProperty": {
+                      "@id": "http://www.w3.org/2006/vcard/ns#family-name"
+                    },
+                    "http://www.w3.org/2002/07/owl#someValuesFrom": {
+                      "@id": "http://www.w3.org/2001/XMLSchema#string"
+                    }
+                  },
+                  {
+                    "@type": "http://www.w3.org/2002/07/owl#Restriction",
+                    "http://www.w3.org/2002/07/owl#maxCardinality": {
+                      "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+                      "@value": "1"
+                    },
+                    "http://www.w3.org/2002/07/owl#onProperty": {
+                      "@id": "http://www.w3.org/2006/vcard/ns#family-name"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@type": "http://www.w3.org/2002/07/owl#Class",
+              "http://www.w3.org/2002/07/owl#intersectionOf": {
+                "@list": [
+                  {
+                    "@type": "http://www.w3.org/2002/07/owl#Restriction",
+                    "http://www.w3.org/2002/07/owl#onProperty": {
+                      "@id": "http://www.w3.org/2006/vcard/ns#given-name"
+                    },
+                    "http://www.w3.org/2002/07/owl#someValuesFrom": {
+                      "@id": "http://www.w3.org/2001/XMLSchema#string"
+                    }
+                  },
+                  {
+                    "@type": "http://www.w3.org/2002/07/owl#Restriction",
+                    "http://www.w3.org/2002/07/owl#maxCardinality": {
+                      "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+                      "@value": "1"
+                    },
+                    "http://www.w3.org/2002/07/owl#onProperty": {
+                      "@id": "http://www.w3.org/2006/vcard/ns#given-name"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@type": "http://www.w3.org/2002/07/owl#Class",
+              "http://www.w3.org/2002/07/owl#intersectionOf": {
+                "@list": [
+                  {
+                    "@type": "http://www.w3.org/2002/07/owl#Restriction",
+                    "http://www.w3.org/2002/07/owl#onProperty": {
+                      "@id": "http://www.w3.org/2006/vcard/ns#honorific-prefix"
+                    },
+                    "http://www.w3.org/2002/07/owl#someValuesFrom": {
+                      "@id": "http://www.w3.org/2001/XMLSchema#string"
+                    }
+                  },
+                  {
+                    "@type": "http://www.w3.org/2002/07/owl#Restriction",
+                    "http://www.w3.org/2002/07/owl#minCardinality": {
+                      "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+                      "@value": "0"
+                    },
+                    "http://www.w3.org/2002/07/owl#onProperty": {
+                      "@id": "http://www.w3.org/2006/vcard/ns#honorific-prefix"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@type": "http://www.w3.org/2002/07/owl#Class",
+              "http://www.w3.org/2002/07/owl#intersectionOf": {
+                "@list": [
+                  {
+                    "@type": "http://www.w3.org/2002/07/owl#Restriction",
+                    "http://www.w3.org/2002/07/owl#onProperty": {
+                      "@id": "http://www.w3.org/2006/vcard/ns#honorific-suffix"
+                    },
+                    "http://www.w3.org/2002/07/owl#someValuesFrom": {
+                      "@id": "http://www.w3.org/2001/XMLSchema#string"
+                    }
+                  },
+                  {
+                    "@type": "http://www.w3.org/2002/07/owl#Restriction",
+                    "http://www.w3.org/2002/07/owl#minCardinality": {
+                      "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+                      "@value": "0"
+                    },
+                    "http://www.w3.org/2002/07/owl#onProperty": {
+                      "@id": "http://www.w3.org/2006/vcard/ns#honorific-suffix"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Sweetheart",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Sweetheart"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#RelatedType"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasHonorificSuffix",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Used to support property parameters for the honorific suffix data property"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "has honorific suffix"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasName",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "To specify the components of the name of the object"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "has name"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#range": {
+        "@id": "http://www.w3.org/2006/vcard/ns#Name"
+      },
+      "http://www.w3.org/2002/07/owl#equivalentProperty": {
+        "@id": "http://www.w3.org/2006/vcard/ns#n"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Pref",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "This class is deprecated",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "Pref"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#Type"
+      },
+      "http://www.w3.org/2002/07/owl#deprecated": {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": "true"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Text",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Also called sms telephone"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Text"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#TelephoneType"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasNickname",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Used to support property parameters for the nickname data property"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "has nickname"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#seeAlso": {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": " http://www.w3.org/2006/vcard/ns#nickname"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Crush",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Crush"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#RelatedType"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#url",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "This object property has been deprecated"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "url"
+      },
+      "http://www.w3.org/2002/07/owl#deprecated": {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": "true"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasRelated",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "To specify a relationship between another entity and the entity represented by this object"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "has related"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#given-name",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "The given name associated with the object",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "given name"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#range": {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#organization-unit",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "To specify the organizational unit name associated with the object",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "organizational unit name"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#range": {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#organization-name"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Parent",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Parent"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#RelatedType"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#nickname",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "The nick name associated with the object",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "nickname"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#range": {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Other",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Other"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#Gender"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Pager",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Pager"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#TelephoneType"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#role",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "To specify the function or part played in a particular situation by the object",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "role"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#range": {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasCountryName",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Used to support property parameters for the country name data property"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "has country name"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Me",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Me"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#RelatedType"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#family-name",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "The family name associated with the object",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "family name"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#range": {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#title",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "To specify the position or job of the object",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "title"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#range": {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#language",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "To specify the language that may be used for contacting the object. May also be used as a property parameter.",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "language"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#adr",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "This object property has been deprecated",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "address"
+      },
+      "http://www.w3.org/2002/07/owl#deprecated": {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": "true"
+      },
+      "http://www.w3.org/2002/07/owl#equivalentProperty": {
+        "@id": "http://www.w3.org/2006/vcard/ns#hasAddress"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#locality",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "The locality (e.g. city or town) associated with the address of the object",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "locality"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#range": {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasValue",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Used to indicate the resource value of an object property that requires property parameters"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "has value"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#prodid",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "To specify the identifier for the product that created the object",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "product id"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#range": {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Date",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Date"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#RelatedType"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#ISDN",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "This class is deprecated",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "ISDN"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#Type"
+      },
+      "http://www.w3.org/2002/07/owl#deprecated": {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": "true"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Coresident",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Coresident"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#RelatedType"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#class",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "This data property has been deprecated",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "class"
+      },
+      "http://www.w3.org/2002/07/owl#deprecated": {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": "true"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasCalendarLink",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "To specify the calendar associated with the object. (Was called CALURI in RFC6350)"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "has calendar link"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasEmail",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "To specify the electronic mail address for communication with the object"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "has email"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#range": {
+        "@id": "http://www.w3.org/2006/vcard/ns#Email"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasAdditionalName",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Used to support property parameters for the additional name data property"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "has additional name"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasOrganizationUnit",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Used to support property parameters for the organization unit name data property"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "has organization unit name"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#label",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "This data property has been deprecated",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "label"
+      },
+      "http://www.w3.org/2002/07/owl#deprecated": {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": "true"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Coworker",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Coworker"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#RelatedType"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#anniversary",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "The date of marriage, or equivalent, of the object"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "anniversary"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#range": {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#category",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "The category information about the object, also known as tags",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "category"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#range": {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#organization-name",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "To specify the organizational name associated with the object",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "organization name"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#range": {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#extended-address",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "This data property has been deprecated",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "extended address"
+      },
+      "http://www.w3.org/2002/07/owl#deprecated": {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": "true"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#sound",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "This object property has been deprecated"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "sound"
+      },
+      "http://www.w3.org/2002/07/owl#deprecated": {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": "true"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasFamilyName",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Used to support property parameters for the family name data property"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "has family name"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Email",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "To specify the electronic mail address for communication with the object the vCard represents. Use the hasEmail object property."
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Email"
+      },
+      "http://www.w3.org/2002/07/owl#deprecated": {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": "true"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#note",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "A note associated with the object",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "note"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#range": {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Male",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Male"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#Gender"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#postal-code",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "The postal code associated with the address of the object",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "postal code"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#range": {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#tel",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "This object property has been deprecated",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "telephone"
+      },
+      "http://www.w3.org/2002/07/owl#deprecated": {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": "true"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#country-name",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "The country name associated with the address of the object",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "country name"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#range": {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Individual",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "An object representing a single person or entity"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Individual"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#Kind"
+      },
+      "http://www.w3.org/2002/07/owl#disjointWith": [
+        {
+          "@id": "http://www.w3.org/2006/vcard/ns#Organization"
+        },
+        {
+          "@id": "http://www.w3.org/2006/vcard/ns#Location"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasPhoto",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "To specify an image or photograph information that annotates some aspect of the object"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "has photo"
+      },
+      "http://www.w3.org/2002/07/owl#equivalentProperty": {
+        "@id": "http://www.w3.org/2006/vcard/ns#photo"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Kind",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "The parent class for all objects"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Kind"
+      },
+      "http://www.w3.org/2002/07/owl#equivalentClass": [
+        {
+          "@id": "http://www.w3.org/2006/vcard/ns#VCard"
+        },
+        {
+          "@type": "http://www.w3.org/2002/07/owl#Restriction",
+          "http://www.w3.org/2002/07/owl#minQualifiedCardinality": {
+            "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+            "@value": "1"
+          },
+          "http://www.w3.org/2002/07/owl#onDataRange": {
+            "@id": "http://www.w3.org/2001/XMLSchema#string"
+          },
+          "http://www.w3.org/2002/07/owl#onProperty": {
+            "@id": "http://www.w3.org/2006/vcard/ns#fn"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Voice",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Voice"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#TelephoneType"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#tz",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "To indicate time zone information that is specific to the object. May also be used as a property parameter.",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "time zone"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#range": {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Car",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "This class is deprecated",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "Car"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#TelephoneType"
+      },
+      "http://www.w3.org/2002/07/owl#deprecated": {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": "true"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#BBS",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "This class is deprecated",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "BBS"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#TelephoneType"
+      },
+      "http://www.w3.org/2002/07/owl#deprecated": {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": "true"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Spouse",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Spouse"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#RelatedType"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Neighbor",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Neighbor"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#RelatedType"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#mailer",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "This data property has been deprecated",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "mailer"
+      },
+      "http://www.w3.org/2002/07/owl#deprecated": {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": "true"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Female",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Female"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#Gender"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Organization",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "An object representing an organization.  An organization is a single entity, and might represent a business or government, a department or division within a business or government, a club, an association, or the like.\n"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Organization"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#Kind"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasURL",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "To specify a uniform resource locator associated with the object"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "has url"
+      },
+      "http://www.w3.org/2002/07/owl#equivalentProperty": {
+        "@id": "http://www.w3.org/2006/vcard/ns#url"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Intl",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "This class is deprecated",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "Intl"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#Type"
+      },
+      "http://www.w3.org/2002/07/owl#deprecated": {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": "true"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Gender",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "Used for gender codes. The URI of the gender code must be used as the value for Gender.",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Gender"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#post-office-box",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "This data property has been deprecated",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "post office box"
+      },
+      "http://www.w3.org/2002/07/owl#deprecated": {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": "true"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Kin",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Kin"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#RelatedType"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasNote",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Used to support property parameters for the note data property"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "has note"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Acquaintance",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Acquaintance"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#RelatedType"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Video",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Video"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#TelephoneType"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasGivenName",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Used to support property parameters for the given name data property"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "has given name"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#street-address",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "The street address associated with the address of the object",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "street address"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#range": {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Parcel",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "This class is deprecated",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "Parcel"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#Type"
+      },
+      "http://www.w3.org/2002/07/owl#deprecated": {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": "true"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasSound",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "To specify a digital sound content information that annotates some aspect of the object"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "has sound"
+      },
+      "http://www.w3.org/2002/07/owl#equivalentProperty": {
+        "@id": "http://www.w3.org/2006/vcard/ns#sound"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Friend",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Friend"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#RelatedType"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasHonorificPrefix",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Used to support property parameters for the honorific prefix data property"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "has honorific prefix"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#fn",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "The formatted text corresponding to the name of the object",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "formatted name"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#range": {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Child",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Child"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#RelatedType"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasCalendarBusy",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "To specify the busy time associated with the object. (Was called FBURL in RFC6350)"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "has calendar busy"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Dom",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "This class is deprecated",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "Dom"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#Type"
+      },
+      "http://www.w3.org/2002/07/owl#deprecated": {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": "true"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Colleague",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Colleague"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#RelatedType"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasStreetAddress",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Used to support property parameters for the street address data property"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "has street address"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#region",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "The region (e.g. state or province) associated with the address of the object",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "region"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#range": {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasFN",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Used to support property parameters for the formatted name data property"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "has formatted name"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#X400",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "This class is deprecated",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "X400"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#Type"
+      },
+      "http://www.w3.org/2002/07/owl#deprecated": {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": "true"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasRole",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Used to support property parameters for the role data property"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "has role"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Agent",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Agent"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#RelatedType"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#rev",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "To specify revision information about the object",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "revision"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#range": {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#RelatedType",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "Used for relation type codes. The URI of the relation type code must be used as the value for the Relation Type.",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Relation Type"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#key",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "This object property has been deprecated"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "key"
+      },
+      "http://www.w3.org/2002/07/owl#deprecated": {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": "true"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#TelephoneType",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "Used for telephone type codes. The URI of the telephone type code must be used as the value for the Telephone Type.",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Phone"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Type",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "Used for type codes. The URI of the type code must be used as the value for Type.",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Type"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasUID",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "To specify a value that represents a globally unique identifier corresponding to the object"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "has uid"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Msg",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "This class is deprecated",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "Msg"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#TelephoneType"
+      },
+      "http://www.w3.org/2002/07/owl#deprecated": {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": "true"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Sibling",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Sibling"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#RelatedType"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasKey",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "To specify a public key or authentication certificate associated with the object"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "has key"
+      },
+      "http://www.w3.org/2002/07/owl#equivalentProperty": {
+        "@id": "http://www.w3.org/2006/vcard/ns#key"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#bday",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "To specify the birth date of the object"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "birth date"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#range": {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasGeo",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "To specify information related to the global positioning of the object. May also be used as a property parameter."
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "has geo"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Group",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Object representing a group of persons or entities.  A group object will usually contain hasMember properties to specify the members of the group."
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Group"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#Kind"
+      },
+      "http://www.w3.org/2002/07/owl#disjointWith": [
+        {
+          "@id": "http://www.w3.org/2006/vcard/ns#Organization"
+        },
+        {
+          "@id": "http://www.w3.org/2006/vcard/ns#Individual"
+        },
+        {
+          "@id": "http://www.w3.org/2006/vcard/ns#Location"
+        }
+      ],
+      "http://www.w3.org/2002/07/owl#equivalentClass": {
+        "@type": "http://www.w3.org/2002/07/owl#Class",
+        "http://www.w3.org/2002/07/owl#intersectionOf": {
+          "@list": [
+            {
+              "@type": "http://www.w3.org/2002/07/owl#Restriction",
+              "http://www.w3.org/2002/07/owl#onProperty": {
+                "@id": "http://www.w3.org/2006/vcard/ns#hasMember"
+              },
+              "http://www.w3.org/2002/07/owl#someValuesFrom": {
+                "@id": "http://www.w3.org/2006/vcard/ns#Kind"
+              }
+            },
+            {
+              "@type": "http://www.w3.org/2002/07/owl#Restriction",
+              "http://www.w3.org/2002/07/owl#minQualifiedCardinality": {
+                "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+                "@value": "1"
+              },
+              "http://www.w3.org/2002/07/owl#onClass": {
+                "@id": "http://www.w3.org/2006/vcard/ns#Kind"
+              },
+              "http://www.w3.org/2002/07/owl#onProperty": {
+                "@id": "http://www.w3.org/2006/vcard/ns#hasMember"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Internet",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "This class is deprecated",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "Internet"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#Type"
+      },
+      "http://www.w3.org/2002/07/owl#deprecated": {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": "true"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#honorific-prefix",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "The honorific prefix of the name associated with the object",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "honorific prefix"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#range": {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#sort-string",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "To specify the string to be used for national-language-specific sorting. Used as a property parameter only.",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "sort as"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#range": {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasTelephone",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "To specify the telephone number for telephony communication with the object"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "has telephone"
+      },
+      "http://www.w3.org/2002/07/owl#equivalentProperty": {
+        "@id": "http://www.w3.org/2006/vcard/ns#tel"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#longitude",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "This data property has been deprecated",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "longitude"
+      },
+      "http://www.w3.org/2002/07/owl#deprecated": {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": "true"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Muse",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Muse"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#RelatedType"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#n",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "This object property has been deprecated",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "name"
+      },
+      "http://www.w3.org/2002/07/owl#deprecated": {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": "true"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Met",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Met"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#RelatedType"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#latitude",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "This data property has been deprecated",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "latitude"
+      },
+      "http://www.w3.org/2002/07/owl#deprecated": {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": "true"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Fax",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Fax"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#TelephoneType"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasInstantMessage",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "To specify the instant messaging and presence protocol communications with the object. (Was called IMPP in RFC6350)"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "has messaging"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#agent",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "This object property has been deprecated",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "agent"
+      },
+      "http://www.w3.org/2002/07/owl#deprecated": {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": "true"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#org",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "This object property has been deprecated. Use the organization-name data property.",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "organization"
+      },
+      "http://www.w3.org/2002/07/owl#deprecated": {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": "true"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#None",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "None"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#Gender"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#photo",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "This object property has been deprecated"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "photo"
+      },
+      "http://www.w3.org/2002/07/owl#deprecated": {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": "true"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Tel",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "This class is deprecated. Use the hasTelephone object property.",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "Tel"
+      },
+      "http://www.w3.org/2002/07/owl#deprecated": {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": "true"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasLanguage",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Used to support property parameters for the language data property"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "has language"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasCategory",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Used to support property parameters for the category data property"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "has category"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasCalendarRequest",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "To specify the calendar user address to which a scheduling request be sent for the object. (Was called CALADRURI in RFC6350)"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "has calendar request"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Unknown",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Unknown"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#Gender"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasMember",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "To include a member in the group this object represents. (This property can only be used by Group individuals)"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#domain": {
+        "@id": "http://www.w3.org/2006/vcard/ns#Group"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "has member"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#range": {
+        "@id": "http://www.w3.org/2006/vcard/ns#Kind"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Label",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "This class is deprecated",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "Label"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#Type"
+      },
+      "http://www.w3.org/2002/07/owl#deprecated": {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": "true"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasTitle",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Used to support property parameters for the title data property"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "has title"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Work",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "This implies that the property is related to an individual's work place"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Work"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#Type"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#TextPhone",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Text phone"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#TelephoneType"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Emergency",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Emergency"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#RelatedType"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#logo",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "This object property has been deprecated"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "logo"
+      },
+      "http://www.w3.org/2002/07/owl#deprecated": {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": "true"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Cell",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Also called mobile telephone"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Cell"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#TelephoneType"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasLocality",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Used to support property parameters for the locality data property"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "has locality"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasOrganizationName",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Used to support property parameters for the organization name data property"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "has organization name"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#additional-name",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "The additional name associated with the object",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "additional name"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#range": {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Postal",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "This class is deprecated",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "Postal"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#Type"
+      },
+      "http://www.w3.org/2002/07/owl#deprecated": {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": "true"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#email",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "This object property has been deprecated"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "email"
+      },
+      "http://www.w3.org/2002/07/owl#deprecated": {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": "true"
+      },
+      "http://www.w3.org/2002/07/owl#equivalentProperty": {
+        "@id": "http://www.w3.org/2006/vcard/ns#hasEmail"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasLogo",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "To specify a graphic image of a logo associated with the object "
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "has logo"
+      },
+      "http://www.w3.org/2002/07/owl#equivalentProperty": {
+        "@id": "http://www.w3.org/2006/vcard/ns#logo"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasSource",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "To identify the source of directory information of the object",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "has source"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Contact",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Contact"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#RelatedType"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#VCard",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "The vCard class is deprecated and equivalent to the new Kind class, which is the parent for the four explicit types of vCards (Individual, Organization, Location, Group)",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "VCard"
+      },
+      "http://www.w3.org/2002/07/owl#deprecated": {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": "true"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasAddress",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "To specify the components of the delivery address for the object"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "has address"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#range": {
+        "@id": "http://www.w3.org/2006/vcard/ns#Address"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#honorific-suffix",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "The honorific suffix of the name associated with the object",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "honorific suffix"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#range": {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasGender",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "To specify  the sex or gender identity of the object.\nURIs are recommended to enable interoperable sex and gender codes to be used."
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "has gender"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasRegion",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Used to support property parameters for the region data property"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "has region"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Modem",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "This class is deprecated",
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "Modem"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#TelephoneType"
+      },
+      "http://www.w3.org/2002/07/owl#deprecated": {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": "true"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Address",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "To specify the components of the delivery address for the  object"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Address"
+      },
+      "http://www.w3.org/2002/07/owl#equivalentClass": {
+        "@type": "http://www.w3.org/2002/07/owl#Class",
+        "http://www.w3.org/2002/07/owl#unionOf": {
+          "@list": [
+            {
+              "@type": "http://www.w3.org/2002/07/owl#Class",
+              "http://www.w3.org/2002/07/owl#intersectionOf": {
+                "@list": [
+                  {
+                    "@type": "http://www.w3.org/2002/07/owl#Restriction",
+                    "http://www.w3.org/2002/07/owl#onProperty": {
+                      "@id": "http://www.w3.org/2006/vcard/ns#country-name"
+                    },
+                    "http://www.w3.org/2002/07/owl#someValuesFrom": {
+                      "@id": "http://www.w3.org/2001/XMLSchema#string"
+                    }
+                  },
+                  {
+                    "@type": "http://www.w3.org/2002/07/owl#Restriction",
+                    "http://www.w3.org/2002/07/owl#maxCardinality": {
+                      "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+                      "@value": "1"
+                    },
+                    "http://www.w3.org/2002/07/owl#onProperty": {
+                      "@id": "http://www.w3.org/2006/vcard/ns#country-name"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@type": "http://www.w3.org/2002/07/owl#Class",
+              "http://www.w3.org/2002/07/owl#intersectionOf": {
+                "@list": [
+                  {
+                    "@type": "http://www.w3.org/2002/07/owl#Restriction",
+                    "http://www.w3.org/2002/07/owl#onProperty": {
+                      "@id": "http://www.w3.org/2006/vcard/ns#locality"
+                    },
+                    "http://www.w3.org/2002/07/owl#someValuesFrom": {
+                      "@id": "http://www.w3.org/2001/XMLSchema#string"
+                    }
+                  },
+                  {
+                    "@type": "http://www.w3.org/2002/07/owl#Restriction",
+                    "http://www.w3.org/2002/07/owl#maxCardinality": {
+                      "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+                      "@value": "1"
+                    },
+                    "http://www.w3.org/2002/07/owl#onProperty": {
+                      "@id": "http://www.w3.org/2006/vcard/ns#locality"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@type": "http://www.w3.org/2002/07/owl#Class",
+              "http://www.w3.org/2002/07/owl#intersectionOf": {
+                "@list": [
+                  {
+                    "@type": "http://www.w3.org/2002/07/owl#Restriction",
+                    "http://www.w3.org/2002/07/owl#onProperty": {
+                      "@id": "http://www.w3.org/2006/vcard/ns#postal-code"
+                    },
+                    "http://www.w3.org/2002/07/owl#someValuesFrom": {
+                      "@id": "http://www.w3.org/2001/XMLSchema#string"
+                    }
+                  },
+                  {
+                    "@type": "http://www.w3.org/2002/07/owl#Restriction",
+                    "http://www.w3.org/2002/07/owl#maxCardinality": {
+                      "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+                      "@value": "1"
+                    },
+                    "http://www.w3.org/2002/07/owl#onProperty": {
+                      "@id": "http://www.w3.org/2006/vcard/ns#postal-code"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@type": "http://www.w3.org/2002/07/owl#Class",
+              "http://www.w3.org/2002/07/owl#intersectionOf": {
+                "@list": [
+                  {
+                    "@type": "http://www.w3.org/2002/07/owl#Restriction",
+                    "http://www.w3.org/2002/07/owl#onProperty": {
+                      "@id": "http://www.w3.org/2006/vcard/ns#region"
+                    },
+                    "http://www.w3.org/2002/07/owl#someValuesFrom": {
+                      "@id": "http://www.w3.org/2001/XMLSchema#string"
+                    }
+                  },
+                  {
+                    "@type": "http://www.w3.org/2002/07/owl#Restriction",
+                    "http://www.w3.org/2002/07/owl#maxCardinality": {
+                      "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+                      "@value": "1"
+                    },
+                    "http://www.w3.org/2002/07/owl#onProperty": {
+                      "@id": "http://www.w3.org/2006/vcard/ns#region"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@type": "http://www.w3.org/2002/07/owl#Class",
+              "http://www.w3.org/2002/07/owl#intersectionOf": {
+                "@list": [
+                  {
+                    "@type": "http://www.w3.org/2002/07/owl#Restriction",
+                    "http://www.w3.org/2002/07/owl#onProperty": {
+                      "@id": "http://www.w3.org/2006/vcard/ns#street-address"
+                    },
+                    "http://www.w3.org/2002/07/owl#someValuesFrom": {
+                      "@id": "http://www.w3.org/2001/XMLSchema#string"
+                    }
+                  },
+                  {
+                    "@type": "http://www.w3.org/2002/07/owl#Restriction",
+                    "http://www.w3.org/2002/07/owl#maxCardinality": {
+                      "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+                      "@value": "1"
+                    },
+                    "http://www.w3.org/2002/07/owl#onProperty": {
+                      "@id": "http://www.w3.org/2006/vcard/ns#street-address"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasPostalCode",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Used to support property parameters for the postal code data property"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@language": "en",
+        "@value": "has postal code"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#geo",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "This object property has been deprecated"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "geo"
+      },
+      "http://www.w3.org/2002/07/owl#deprecated": {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": "true"
+      },
+      "http://www.w3.org/2002/07/owl#equivalentProperty": {
+        "@id": "http://www.w3.org/2006/vcard/ns#hasGeo"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns#Location",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "An object representing a named geographical place"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Location"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://www.w3.org/2006/vcard/ns#Kind"
+      },
+      "http://www.w3.org/2002/07/owl#disjointWith": {
+        "@id": "http://www.w3.org/2006/vcard/ns#Organization"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns",
+      "@type": "http://www.w3.org/2002/07/owl#Ontology",
+      "http://www.w3.org/2000/01/rdf-schema#comment": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Ontology for vCard based on RFC6350"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Ontology for vCard"
+      },
+      "http://www.w3.org/2002/07/owl#versionInfo": {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Draft"
+      }
+    }
+  ]
+}
