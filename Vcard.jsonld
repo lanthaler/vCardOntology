@@ -75,7 +75,7 @@
                 "@type": "http://www.w3.org/2002/07/owl#Restriction",
                 "http://www.w3.org/2002/07/owl#minCardinality": {
                   "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-                  "@value": "0"
+                  "@value": 0
                 },
                 "http://www.w3.org/2002/07/owl#onProperty": {
                   "@id": "http://www.w3.org/2006/vcard/ns#additional-name"
@@ -99,7 +99,7 @@
                 "@type": "http://www.w3.org/2002/07/owl#Restriction",
                 "http://www.w3.org/2002/07/owl#maxCardinality": {
                   "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-                  "@value": "1"
+                  "@value": 1
                 },
                 "http://www.w3.org/2002/07/owl#onProperty": {
                   "@id": "http://www.w3.org/2006/vcard/ns#family-name"
@@ -123,7 +123,7 @@
                 "@type": "http://www.w3.org/2002/07/owl#Restriction",
                 "http://www.w3.org/2002/07/owl#maxCardinality": {
                   "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-                  "@value": "1"
+                  "@value": 1
                 },
                 "http://www.w3.org/2002/07/owl#onProperty": {
                   "@id": "http://www.w3.org/2006/vcard/ns#given-name"
@@ -147,7 +147,7 @@
                 "@type": "http://www.w3.org/2002/07/owl#Restriction",
                 "http://www.w3.org/2002/07/owl#minCardinality": {
                   "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-                  "@value": "0"
+                  "@value": 0
                 },
                 "http://www.w3.org/2002/07/owl#onProperty": {
                   "@id": "http://www.w3.org/2006/vcard/ns#honorific-prefix"
@@ -171,7 +171,7 @@
                 "@type": "http://www.w3.org/2002/07/owl#Restriction",
                 "http://www.w3.org/2002/07/owl#minCardinality": {
                   "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-                  "@value": "0"
+                  "@value": 0
                 },
                 "http://www.w3.org/2002/07/owl#onProperty": {
                   "@id": "http://www.w3.org/2006/vcard/ns#honorific-suffix"
@@ -892,7 +892,7 @@
           "@type": "http://www.w3.org/2002/07/owl#Restriction",
           "http://www.w3.org/2002/07/owl#minQualifiedCardinality": {
             "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-            "@value": "1"
+            "@value": 1
           },
           "http://www.w3.org/2002/07/owl#onDataRange": {
             "@id": "http://www.w3.org/2001/XMLSchema#string"
@@ -1553,7 +1553,7 @@
             "@type": "http://www.w3.org/2002/07/owl#Restriction",
             "http://www.w3.org/2002/07/owl#minQualifiedCardinality": {
               "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-              "@value": "1"
+              "@value": 1
             },
             "http://www.w3.org/2002/07/owl#onClass": {
               "@id": "http://www.w3.org/2006/vcard/ns#Kind"
@@ -2181,7 +2181,7 @@
                 "@type": "http://www.w3.org/2002/07/owl#Restriction",
                 "http://www.w3.org/2002/07/owl#maxCardinality": {
                   "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-                  "@value": "1"
+                  "@value": 1
                 },
                 "http://www.w3.org/2002/07/owl#onProperty": {
                   "@id": "http://www.w3.org/2006/vcard/ns#country-name"
@@ -2205,7 +2205,7 @@
                 "@type": "http://www.w3.org/2002/07/owl#Restriction",
                 "http://www.w3.org/2002/07/owl#maxCardinality": {
                   "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-                  "@value": "1"
+                  "@value": 1
                 },
                 "http://www.w3.org/2002/07/owl#onProperty": {
                   "@id": "http://www.w3.org/2006/vcard/ns#locality"
@@ -2229,7 +2229,7 @@
                 "@type": "http://www.w3.org/2002/07/owl#Restriction",
                 "http://www.w3.org/2002/07/owl#maxCardinality": {
                   "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-                  "@value": "1"
+                  "@value": 1
                 },
                 "http://www.w3.org/2002/07/owl#onProperty": {
                   "@id": "http://www.w3.org/2006/vcard/ns#postal-code"
@@ -2253,7 +2253,7 @@
                 "@type": "http://www.w3.org/2002/07/owl#Restriction",
                 "http://www.w3.org/2002/07/owl#maxCardinality": {
                   "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-                  "@value": "1"
+                  "@value": 1
                 },
                 "http://www.w3.org/2002/07/owl#onProperty": {
                   "@id": "http://www.w3.org/2006/vcard/ns#region"
@@ -2277,7 +2277,7 @@
                 "@type": "http://www.w3.org/2002/07/owl#Restriction",
                 "http://www.w3.org/2002/07/owl#maxCardinality": {
                   "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-                  "@value": "1"
+                  "@value": 1
                 },
                 "http://www.w3.org/2002/07/owl#onProperty": {
                   "@id": "http://www.w3.org/2006/vcard/ns#street-address"
