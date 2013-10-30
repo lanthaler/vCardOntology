@@ -27,7 +27,12 @@
     "disjointWith": { "@id": "owl:disjointWith", "@type": "@id" },
     "versionInfo": { "@id": "owl:versionInfo", "@language": "en" }
   },
-  "@graph": [
+  "@id": "http://www.w3.org/2006/vcard/ns",
+  "@type": "owl:Ontology",
+  "comment": "Ontology for vCard based on RFC6350",
+  "label": "Ontology for vCard",
+  "versionInfo": "Draft"
+  "defines": [
     {
       "@id": "vcard:value",
       "@type": "owl:DatatypeProperty",
@@ -1197,13 +1202,6 @@
       "label": "Location",
       "subClassOf": "vcard:Kind",
       "disjointWith": "vcard:Organization"
-    },
-    {
-      "@id": "http://www.w3.org/2006/vcard/ns",
-      "@type": "owl:Ontology",
-      "comment": "Ontology for vCard based on RFC6350",
-      "label": "Ontology for vCard",
-      "versionInfo": "Draft"
     }
   ]
 }
