@@ -31,7 +31,7 @@
   "@type": "owl:Ontology",
   "comment": "Ontology for vCard based on RFC6350",
   "label": "Ontology for vCard",
-  "versionInfo": "Draft"
+  "versionInfo": "Draft",
   "defines": [
     {
       "@id": "vcard:value",
