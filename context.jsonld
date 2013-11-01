@@ -2,7 +2,6 @@
   "@context": {
     "vcard": "http://www.w3.org/2006/vcard/ns#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-
     "Acquaintance": "vcard:Acquaintance",
     "Address": "vcard:Address",
     "Agent": "vcard:Agent",
@@ -48,7 +47,6 @@
     "Video": "vcard:Video",
     "Voice": "vcard:Voice",
     "Work": "vcard:Work",
-
     "hasAdditionalName": { "@id": "vcard:hasAdditionalName", "@type": "@id" },
     "hasAddress": { "@id": "vcard:hasAddress", "@type": "@id" },
     "hasCalendarBusy": { "@id": "vcard:hasCalendarBusy", "@type": "@id" },
@@ -88,7 +86,6 @@
     "hasUID": { "@id": "vcard:hasUID", "@type": "@id" },
     "hasURL": { "@id": "vcard:hasURL", "@type": "@id" },
     "hasValue": { "@id": "vcard:hasValue", "@type": "@id" },
-
     "additional-name": "vcard:additional-name",
     "anniversary": { "@id": "vcard:anniversary", "@type": "xsd:dateTime" },
     "bday": { "@id": "vcard:bday", "@type": "xsd:dateTime" },
@@ -115,8 +112,6 @@
     "title": "vcard:title",
     "tz": "vcard:tz",
     "value": "vcard:value",
-
-
     "BBS": "vcard:BBS",
     "Car": "vcard:Car",
     "Dom": "vcard:Dom",
@@ -134,7 +129,6 @@
     "Tel": "vcard:Tel",
     "VCard": "vcard:VCard",
     "X400": "vcard:X400",
-
     "adr": { "@id": "vcard:adr", "@type": "@id" },
     "agent": { "@id": "vcard:agent", "@type": "@id" },
     "email": { "@id": "vcard:email", "@type": "@id" },
@@ -147,7 +141,6 @@
     "sound": { "@id": "vcard:sound", "@type": "@id" },
     "tel": { "@id": "vcard:tel", "@type": "@id" },
     "url": { "@id": "vcard:url", "@type": "@id" },
-
     "class": "vcard:class",
     "extended-address": "vcard:extended-address",
     "label": "vcard:label",
