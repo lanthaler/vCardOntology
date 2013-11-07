@@ -4,7 +4,7 @@
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "owl": "http://www.w3.org/2002/07/owl#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "defines": { "@reverse": "rdfs:definedBy" },
+    "defines": { "@reverse": "rdfs:isDefinedBy" },
     "label": { "@id": "rdfs:label", "@language": "en" },
     "comment": { "@id": "rdfs:comment", "@language": "en" },
     "subClassOf": { "@id": "rdfs:subClassOf", "@type": "@id" },
